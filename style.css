@@ -1,528 +1,67 @@
-/* Базовые сбросы и стили */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    font-family: Poppins;
+    width: 1440px;
+  height: 6411px;
+}
+.header {
+    width: 1440px;
+  height: 90px;
+    background-color: #ffffff;
+    position: sticky;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 1440px;
-    margin: 0 auto;
-    min-height: 6411px;
-    position: relative;
-    background-color: #fff;
-}
-
-/* Навигация - FLEX */
-nav {
+.nav1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 1440px;
-    background-color: white;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    width: 1200px;
+  height: 90px;
+  padding: 0 120px;
 }
 
-nav div:first-child {
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 1px;
+/* Логотип */
+.logo {
+   width: 220px;
+  height: 19px;
 }
-
-nav ul {
+/* Навигационное меню */
+.nav2 {
+    position: relative;
+    gap: 33px;
     display: flex;
     list-style: none;
-    gap: 40px;
+    width: 584.8px;
+  height: 50px;
+  left:-36px;
+  top:12px;
 }
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #888;
-    cursor: pointer;
-}
-
-/* Герой-секция - FLEX */
-header {
-    height: 800px;
-    background-color: #f8f8f8;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
-    margin-top: 80px;
-}
-
-.img1{
-width: 720px;
-height: 720px;
-}
-
-header div {
-    max-width: 600px;
-}
-
-header h1 {
-    font-size: 64px;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-bottom: 30px;
-    letter-spacing: 0.5px;
-}
-
-header p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 40px;
-    max-width: 500px;
-}
-
-header button {
-    background-color: #000;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
-}
-
-header button:hover {
-    background-color: #333;
-}
-
-/* Секция Our firm - GRID */
-#about {
-    padding: 100px 40px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 80px;
-    background-color: white;
-}
-
-.section-title h2 {
-    font-size: 36px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-}
-
-.section-content p {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Карточка сотрудника - FLEX */
-.profile-section {
-    padding: 80px 40px;
-    background-color: #f5f5f5;
-}
-
-.profile-card {
-    display: flex;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 14px;
-}
-
-.profile-info h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px;
-}
-
-.profile-info p {
-    color: #666;
-}
-
-/* Секция Our Process - FLEX */
-#process {
-    padding: 100px 40px;
-    background-color: white;
-    text-align: center;
-}
-
-#process h2 {
-    font-size: 36px;
-    font-weight: 300;
-    margin-bottom: 80px;
-    letter-spacing: 0.5px;
-}
-
-.subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    color: #666;
-    display: block;
-    margin-top: 10px;
-}
-
-.process-steps {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.step {
-    flex: 1;
-    margin: 0 15px;
-    text-align: left;
-}
-
-.step h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-.step p {
-    color: #666;
-}
-
-/* Карточки проектов - GRID */
-.projects-grid {
-    padding: 100px 40px;
-    background-color: #f8f8f8;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.project-card {
-    background-color: white;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    cursor: pointer;
-}
-
-.project-card h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    letter-spacing: 0.5px;
-}
-
-.project-card p {
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.project-image {
-    height: 200px;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-/* Секция Featured Projects - FLEX */
-.featured-project {
-    padding: 100px 40px;
-    background-color: white;
-    text-align: center;
-}
-
-.featured-project h2 {
-    font-size: 36px;
-    font-weight: 300;
-    margin-bottom: 30px;
-    letter-spacing: 0.5px;
-}
-
-.featured-subtitle {
-    text-align: center;
-    color: #666;
-    margin-bottom: 60px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.featured-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.featured-image {
-    width: 400px;
-    height: 300px;
-    background-color: #eee;
-    margin-right: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 14px;
-}
-
-.featured-info h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    letter-spacing: 0.5px;
-    text-align: left;
-}
-
-.view-all {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-block;
-    margin-top: 20px;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.3s;
-}
-
-.view-all:hover {
-    border-bottom: 1px solid #333;
-}
-
-/* Секция Meet our team - GRID */
-.team-section {
-    padding: 100px 40px;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-
-.team-section h2 {
-    font-size: 36px;
-    font-weight: 300;
-    margin-bottom: 60px;
-    letter-spacing: 0.5px;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.team-member {
-    text-align: center;
-}
-
-.member-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin: 0 auto 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 14px;
-}
-
-.team-member h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    letter-spacing: 0.5px;
-}
-
-.team-member p {
-    color: #666;
-    font-size: 14px;
-}
-
-.see-team {
-    display: block;
-    text-align: center;
-    margin-top: 50px;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-}
-
-.see-team:hover {
-    color: #888;
-}
-
-/* Секция Get in touch - FLEX */
-.contact-section {
-    padding: 100px 40px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-}
-
-.contact-section h2 {
-    font-size: 36px;
-    font-weight: 300;
-    margin-bottom: 30px;
-    letter-spacing: 0.5px;
-}
-
-.contact-section p {
-    max-width: 600px;
-    margin: 0 auto 40px;
-    color: #ccc;
-}
-
-.contact-btn {
-    background-color: white;
-    color: #333;
-    border: none;
-    padding: 15px 30px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.contact-btn:hover {
-    background-color: #f0f0f0;
-}
-
-/* Футер - FLEX */
-footer {
-    padding: 40px;
-    background-color: #222;
-    color: #aaa;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-brand {
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: #eee;
-}
-
-.footer-info {
-    font-size: 14px;
-    text-align: right;
-}
-
-.footer-info p {
-    margin-bottom: 5px;
-}
-
-/* Дополнительные стили для интерактивности */
-a, button {
-    cursor: pointer;
-}
-
-/* INLINE-BLOCK элементы */
-.project-card, .team-member, .step {
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* Медиа-запросы для базовой адаптивности */
-@media (max-width: 1200px) {
-    body {
-        max-width: 100%;
-    }
+.nav2 a {
     
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .team-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    height: 24px;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1b1a1a;
 }
-
-@media (max-width: 768px) {
-    nav ul {
-        gap: 20px;
-    }
-    
-    header h1 {
-        font-size: 48px;
-
-    }
-    
-    #about {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .process-steps {
-        flex-direction: column;
-    }
-    
-    .step {
-        margin: 0 0 40px 0;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .featured-content {
-        flex-direction: column;
-    }
-    
-    .featured-image {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-    
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    footer {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .footer-info {
-        text-align: center;
-    }
+.header-btn{
+position: relative;
+width: 155px;
+  height: 46px;
+  border-radius: 15px;
+  background-color: #1b1a1a;
+  bottom: 11px;
+}
+.header-btn span{
+    width: 115px;
+  height: 24px;
+    position: relative;
+    top:2.2px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #fff;
 }
