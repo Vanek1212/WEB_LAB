@@ -71,6 +71,7 @@ width: 155px;
 .header-main{
     max-width: 1440px;
     height: 720px;
+     background-color: #ece7e4;
 }
 .two-column{
   display: flex;
@@ -114,4 +115,81 @@ line-height: 70px;
   bottom:23px;
   left:26px;
   letter-spacing: 0.4px;
+}
+#about{
+  width: 1440px;
+  height: 782px;
+  padding: auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.section-title{
+  position: relative;
+  top: 65px;
+  left: 303px;
+}
+.section-title h2{
+font-size: 32px;
+font-weight:500;
+}
+.section-content{
+  width: 470px;
+  position: relative;
+  top: 84px;
+  right: 5px;
+}
+.section-content p1{
+  position: relative;
+  bottom: 6px;
+}
+.p1{
+    position: relative;
+    bottom: 12px;
+}
+.profile-card{
+width: 501.3px;
+height: 100px;
+display: flex;
+gap:30px;
+}
+.profile-card img{
+position: relative;
+width: 75px;
+height: 75px;
+border-radius: 64%;
+border: 4px solid #a69d9d;
+bottom: 10px;
+}
+.profile-info h3{
+  position: relative;
+  font-weight: 400;
+  font-size: 17.2px;
+  bottom: 5px;
+}
+.profile-info p{
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  bottom: 29px;
+
+}
+.reeding{
+  width: 1440px;
+  height: 600px;
+  overflow: hidden;
+position: relative;
+}
+
+.reeding img{
+  position: relative;
+  width: 1440px;
+  height: auto;
+ bottom: 150px;
+ right: 32px;
+}
+.reeding-info{
+  z-index: 3;;
+}
+.reeding-info h3{
+z-index: 2;
 }
