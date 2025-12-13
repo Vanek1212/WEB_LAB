@@ -7,7 +7,7 @@ body{
     width: 1440px;
   height: 90px;
     background-color: #ffffff;
-    position: sticky;
+
 }
 
 .nav1 {
@@ -34,9 +34,12 @@ body{
   height: 50px;
   left:-36px;
   top:12px;
+  
 }
+
 .nav2 a {
-    
+    list-style-type:none ;
+  text-decoration: none;
     height: 24px;
   font-size: 15px;
   font-weight: normal;
@@ -64,4 +67,51 @@ width: 155px;
   letter-spacing: 2px;
   text-align: left;
   color: #fff;
+}
+.header-main{
+    max-width: 1440px;
+    height: 720px;
+}
+.two-column{
+  display: flex;
+  align-items: flex-start;
+}
+.text-column{
+ width: 720px;
+ justify-content: center;
+ align-items: center;
+}
+.img-column{
+  position: relative;
+  flex: 1;
+right: 31px;
+}
+.text-column{
+  position: relative;
+  left: 67px;
+  top: 119px;
+}
+.wish{
+  position: relative;
+letter-spacing:0.7px ;
+top: 0;
+}
+.text-column h1{
+  position: relative;
+  bottom: 24px;
+font-weight: 400;
+font-size: 64px;
+width: 400px;
+line-height: 70px;
+}
+.text-column p{
+  position: relative;
+  width: 510px;
+  bottom: 47px;
+}
+.text-column span{
+  position: relative;
+  bottom:23px;
+  left:26px;
+  letter-spacing: 0.4px;
 }
