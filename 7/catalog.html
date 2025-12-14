@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Wishbone+Partners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
+   
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="header">
+        <nav class="nav1">
+            <img class="logo" src="/WEB_LAB/img/image.svg" alt="logo">
+            <ul class="nav2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" style="font-weight: 600;">Catalog</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="header-btn"><span>Get template</span></button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Основной контент каталога -->
+    <main class="catalog-main">
+        <!-- Заголовок -->
+        <div class="catalog-title">
+            <h1>Our Architectural Services</h1>
+            <p>Explore our comprehensive range of architectural and design services</p>
+        </div>
+
+        <!-- Элементы управления -->
+        <div class="catalog-controls">
+            <!-- Поиск -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search services by name or description...">
+            </div>
+
+            <!-- Сортировка -->
+            <div class="sort-box">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect">
+                    <option value="default">Default</option>
+                    <option value="price_asc">Price: Low to High</option>
+                    <option value="price_desc">Price: High to Low</option>
+                    <option value="name_asc">Name: A to Z</option>
+                    <option value="name_desc">Name: Z to A</option>
+                    <option value="rating_desc">Rating: High to Low</option>
+                </select>
+            </div>
+
+            <!-- Фильтр по категориям -->
+            <div class="category-box">
+                <label for="categoryFilter">Filter by category:</label>
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Interior">Interior Design</option>
+                    <option value="Urban">Urban Planning</option>
+                    <option value="Sustainable">Sustainable Design</option>
+                    <option value="Consultation">Consultation</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Кнопки методов массива -->
+        <div class="methods-section">
+            <h2>Array Methods Demonstration</h2>
+            <div class="method-buttons" id="methodButtons">
+                <!-- Кнопки будут добавлены через JavaScript -->
+            </div>
+            <div class="method-result" id="methodResult"></div>
+        </div>
+
+        <!-- Контейнер для карточек (пустой) -->
+        <div class="catalog-container" id="catalogContainer">
+            <!-- Карточки будут добавлены через JavaScript -->
+        </div>
+
+        <!-- Сообщение при отсутствии результатов -->
+        <div class="no-results" id="noResults" style="display: none;">
+            <h3>No services found matching your criteria</h3>
+            <p>Try adjusting your search or filter options</p>
+        </div>
+
+        <!-- Кнопка возврата на главную -->
+        <div class="back-home">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-brand">Wishbone+Partners</div>
+        <div class="footer-info">
+            <p>Powered by Webflow.</p>
+            <p>All rights reserved Wishbone+Partners, Inc. Licensing</p>
+        </div>
+        <div class="foter-img">
+            <img src="/WEB_LAB/img/Path.png" alt="">
+            <img src="/WEB_LAB/img/Shape.png" alt="">
+            <img src="/WEB_LAB/img/Frame (12).png" alt="">
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="catalog.js"></script>
+</body>
+</html>
