@@ -2,6 +2,7 @@ body{
     font-family: Poppins;
     width: 1440px;
   height: 6411px;
+  margin: 0 120px;
 }
 .header {
     width: 1440px;
@@ -309,4 +310,167 @@ right: 85px;
   grid-template-rows: 2;
   width: 432px;
   height: 290px;
+}
+.SWIRLING{
+  width: 1407px;
+  height: 600px;
+  overflow: hidden;
+}
+.SWIRLING img{
+position: relative;
+bottom: 185px;
+right: 145px;
+}
+.featured-project{
+  width: 1407px;
+  height: 918px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.featured-project-main{
+  height: 698px;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 103px;
+}
+.featured-project h2{
+  font-size: 39px;
+  font-weight: 400;
+  position: relative;
+  top: 74px;
+  left: 1px;
+}
+.featured-subtitle{
+  position: relative;
+  top: 48px;
+  left: 1px;
+  width: 581px;
+  font-size: 24px;
+  line-height: 29px;
+}
+.featured-img{
+  width:1168px;
+  height: 460px;
+  position: relative;
+  top: 69px;
+  left: 3px;
+}
+.featured-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:17px;
+}
+.featured-img img{
+  width: 375px;
+  height: 456px;
+}
+.view-all{
+  position: relative;
+  top: 120px;
+  left: 520px;
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
+/*////////////////////////////////*/
+.newyork1{
+  position: relative;
+
+}
+.newyork2{
+  position: relative;
+
+}
+.btn-readmore{
+
+}
+/*/////////////////////*/
+.team{
+  height: 592px;
+  justify-content: center;
+  align-items: center;
+}
+.Meet-container{
+  margin:0 105px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3,1fr);
+  height: 1168px;
+  height: 392px;
+}
+.member-photo img{
+position: relative;
+width: 75px;
+height: 75px;
+border-radius: 64%;
+border: 4px solid #a69d9d;
+bottom: 10%;
+}
+.team-member{
+  position: relative;
+
+}
+.contact-section{
+height: 314px;
+width: 1390px;
+justify-content: center;
+align-items: center;
+}
+.contact-section h2{
+  position: relative;
+  font-weight: 400;
+  font-size:15px ;
+  left: 7.5%;
+  top: 27.4%;
+letter-spacing: 1.5px;
+}
+.contact-section p{
+position: relative;
+  font-weight: 400;
+  font-size:37.4px ;
+  width: 570px;
+  left: 7.5%;
+  top: 13.4%;
+letter-spacing: 1.36px;
+line-height: 113%;
+}
+.contact-btn{
+  list-style-type: none;
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  left:82.6%;
+  bottom: 15.5%;
+  letter-spacing: 0.3px;
+}
+footer{
+  height: 204px;
+}
+.footer-brand{
+  position: relative;
+  font-size: 25.5px;
+  font-weight: 600;
+  left: 7.2%;
+  top: 21.6%;
+}
+.footer-info{
+  position: relative;
+  left: 7.2%;
+  top: 24.3%;
+  font-size: 14px;
+  line-height: 34%;
+}
+.foter-img{
+  position: relative;
+  left: 80%;
+  top: 5.1%;
+  width: 130px;
+}
+.foter-img img{
+  margin: 8px;
 }
